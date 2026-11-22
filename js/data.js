@@ -66,10 +66,14 @@ const createPhoto = (id) => {
   };
 };
 
-const photos = [];
+const generatePhotos = () => {
+  const photos = [];
 
-for (let i = 1; i <= 25; i++) {
-  photos.push(createPhoto(i));
-}
+  for (let i = 1; i <= 25; i++) {
+    photos.push(createPhoto(i));
+  }
 
-export {createPhoto};
+  return photos;
+};
+
+export { generatePhotos };
